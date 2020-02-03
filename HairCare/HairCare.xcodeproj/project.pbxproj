@@ -16,6 +16,8 @@
 		2C1A701823E8ACD200348302 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1A701723E8ACD200348302 /* SignInViewController.swift */; };
 		2C1A701A23E8ACD900348302 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1A701923E8ACD900348302 /* HomeViewController.swift */; };
 		2C1A701C23E8C3FA00348302 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1A701B23E8C3FA00348302 /* Utilities.swift */; };
+		2C1A701F23E8D22F00348302 /* Play-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2C1A701D23E8D22F00348302 /* Play-Bold.ttf */; };
+		2C1A702023E8D22F00348302 /* Play-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2C1A701E23E8D22F00348302 /* Play-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		2C1A701723E8ACD200348302 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		2C1A701923E8ACD900348302 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		2C1A701B23E8C3FA00348302 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		2C1A701D23E8D22F00348302 /* Play-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Play-Bold.ttf"; sourceTree = "<group>"; };
+		2C1A701E23E8D22F00348302 /* Play-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Play-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +114,8 @@
 		2C1A701323E8AA8F00348302 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				2C1A701D23E8D22F00348302 /* Play-Bold.ttf */,
+				2C1A701E23E8D22F00348302 /* Play-Regular.ttf */,
 			);
 			name = Fonts;
 			sourceTree = "<group>";
@@ -183,8 +189,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C1A700723E8A1BD00348302 /* LaunchScreen.storyboard in Resources */,
+				2C1A701F23E8D22F00348302 /* Play-Bold.ttf in Resources */,
 				2C1A700423E8A1BD00348302 /* Assets.xcassets in Resources */,
 				2C1A700223E8A1BB00348302 /* Main.storyboard in Resources */,
+				2C1A702023E8D22F00348302 /* Play-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
