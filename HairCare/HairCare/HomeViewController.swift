@@ -9,11 +9,19 @@
 import UIKit
 
 class HomeViewController: UIViewController {
+    
+    @IBOutlet weak var signUpButton: UIButton!
+    @IBOutlet weak var signInButton: UIButton!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        updateViews()
+    }
+    
+    func updateViews() {
+        Utilities.styleFilledButton(signUpButton)
+        Utilities.styleHollowButton(signInButton)
     }
     
 

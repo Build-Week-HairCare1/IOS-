@@ -15,6 +15,7 @@
 		2C1A701623E8ACC700348302 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1A701523E8ACC700348302 /* SignUpViewController.swift */; };
 		2C1A701823E8ACD200348302 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1A701723E8ACD200348302 /* SignInViewController.swift */; };
 		2C1A701A23E8ACD900348302 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1A701923E8ACD900348302 /* HomeViewController.swift */; };
+		2C1A701C23E8C3FA00348302 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1A701B23E8C3FA00348302 /* Utilities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		2C1A701523E8ACC700348302 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		2C1A701723E8ACD200348302 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		2C1A701923E8ACD900348302 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		2C1A701B23E8C3FA00348302 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				2C1A701323E8AA8F00348302 /* Fonts */,
+				2C1A701B23E8C3FA00348302 /* Utilities.swift */,
 				2C1A6FFA23E8A1BA00348302 /* AppDelegate.swift */,
 				2C1A6FFC23E8A1BB00348302 /* SceneDelegate.swift */,
 				2C1A700323E8A1BD00348302 /* Assets.xcassets */,
@@ -192,6 +195,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C1A701C23E8C3FA00348302 /* Utilities.swift in Sources */,
 				2C1A701A23E8ACD900348302 /* HomeViewController.swift in Sources */,
 				2C1A701823E8ACD200348302 /* SignInViewController.swift in Sources */,
 				2C1A701623E8ACC700348302 /* SignUpViewController.swift in Sources */,

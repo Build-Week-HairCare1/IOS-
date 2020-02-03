@@ -9,11 +9,28 @@
 import UIKit
 
 class SignInViewController: UIViewController {
-
+    
+    
+    @IBOutlet weak var usernameTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var signInButton: UIButton!
+    @IBOutlet weak var messageLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        updateViews()
+    }
+    
+    
+    @IBAction func signInTapped(_ sender: Any) {
+    }
+    
+    func updateViews() {
+        messageLabel.alpha = 0
+        Utilities.styleTextField(usernameTextField)
+        Utilities.styleTextField(passwordTextField)
+        Utilities.styleFilledButton(signInButton)
     }
     
 
