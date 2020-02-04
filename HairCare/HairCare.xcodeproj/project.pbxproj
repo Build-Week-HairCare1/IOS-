@@ -18,6 +18,7 @@
 		2C1A701C23E8C3FA00348302 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1A701B23E8C3FA00348302 /* Utilities.swift */; };
 		2C1A701F23E8D22F00348302 /* Play-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2C1A701D23E8D22F00348302 /* Play-Bold.ttf */; };
 		2C1A702023E8D22F00348302 /* Play-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2C1A701E23E8D22F00348302 /* Play-Regular.ttf */; };
+		2C1A702223E8DE1200348302 /* Caudex-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2C1A702123E8DE1200348302 /* Caudex-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		2C1A701B23E8C3FA00348302 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		2C1A701D23E8D22F00348302 /* Play-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Play-Bold.ttf"; sourceTree = "<group>"; };
 		2C1A701E23E8D22F00348302 /* Play-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Play-Regular.ttf"; sourceTree = "<group>"; };
+		2C1A702123E8DE1200348302 /* Caudex-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Caudex-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 			children = (
 				2C1A701D23E8D22F00348302 /* Play-Bold.ttf */,
 				2C1A701E23E8D22F00348302 /* Play-Regular.ttf */,
+				2C1A702123E8DE1200348302 /* Caudex-Regular.ttf */,
 			);
 			name = Fonts;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 				2C1A700423E8A1BD00348302 /* Assets.xcassets in Resources */,
 				2C1A700223E8A1BB00348302 /* Main.storyboard in Resources */,
 				2C1A702023E8D22F00348302 /* Play-Regular.ttf in Resources */,
+				2C1A702223E8DE1200348302 /* Caudex-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
