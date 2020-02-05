@@ -38,9 +38,7 @@ class SignUpViewController: UIViewController {
             view.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0),
             view.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0)
         ])
-        
-        messageLabel.alpha = 0
-        
+                
         Utilities.styleTextField(userNameTextField)
         Utilities.styleTextField(locationTextField)
         Utilities.styleTextField(emailTextField)

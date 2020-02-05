@@ -11,10 +11,10 @@ import UIKit
 class SignInViewController: UIViewController {
     
     
-    @IBOutlet weak var usernameTextField: UITextField!
+    @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-    @IBOutlet weak var signInButton: UIButton!
-    @IBOutlet weak var messageLabel: UILabel!
+    @IBOutlet weak var signInClientButton: UIButton!
+    @IBOutlet weak var signInStylistButton: UIButton!
     
     
     override func viewDidLoad() {
@@ -27,10 +27,12 @@ class SignInViewController: UIViewController {
     }
     
     func updateViews() {
-        messageLabel.alpha = 0
-        Utilities.styleTextField(usernameTextField)
+        Utilities.styleTextField(emailTextField)
         Utilities.styleTextField(passwordTextField)
-        Utilities.styleFilledButton(signInButton)
+        Utilities.styleFilledButton(signInClientButton)
+        signInStylistButton.layer.cornerRadius = 5.0
+        
+        
     }
     
 
