@@ -11,12 +11,13 @@ import UIKit
 class SignUpViewController: UIViewController {
 
     @IBOutlet weak var userNameTextField: UITextField!
-    @IBOutlet weak var locationTextField: UITextField!
+    @IBOutlet weak var cityTextField: UITextField!
+    @IBOutlet weak var stateTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var signUpButton: UIButton!
-    @IBOutlet weak var messageLabel: UILabel!
     
+    var apiController: APIController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,36 +25,37 @@ class SignUpViewController: UIViewController {
     }
     
     @IBAction func signUpTapped(_ sender: Any) {
+        guard let _ = apiController,
+            let fullName = userNameTextField.text,
+            let city = cityTextField.text,
+            let state = stateTextField.text,
+            let email = emailTextField.text,
+            let password = passwordTextField.text else { return }
+            
+        let firstName = String(fullName.split(separator: " ")[0])
+        let lastName = String(fullName.split(separator: " ").last ?? "")
+        
+        let customer = CustomerRepresentation(id: 1, firstName: firstName, lastName: lastName, city: city, state: state, email: email, password: password)
+        
+        signUp(with: customer)
     }
     
-    func updateViews() {
-        
-        let imageView = UIImageView()
-        imageView.image = UIImage(named: "HairCare")
-        view.addSubview(imageView)
-        
-        NSLayoutConstraint.activate([
-            view.topAnchor.constraint(equalTo: view.topAnchor, constant: 0),
-            view.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0),
-            view.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0),
-            view.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0)
-        ])
-                
+    func signUp(with customer: CustomerRepresentation) {
+        apiController?.signUp(customer: customer, completion: { (error) in
+            if let error = error {
+                NSLog("Error occured during sign up: \(error)")
+            } else {
+                self.navigationController?.popViewController(animated: true)
+            }
+        })
+    }
+    
+    func updateViews() {                
         Utilities.styleTextField(userNameTextField)
-        Utilities.styleTextField(locationTextField)
+        Utilities.styleTextField(cityTextField)
+        Utilities.styleTextField(stateTextField)
         Utilities.styleTextField(emailTextField)
         Utilities.styleTextField(passwordTextField)
         Utilities.styleFilledButton(signUpButton)
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

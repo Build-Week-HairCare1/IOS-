@@ -10,12 +10,12 @@ import UIKit
 
 class SignInViewController: UIViewController {
     
-    
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var signInClientButton: UIButton!
     @IBOutlet weak var signInStylistButton: UIButton!
     
+    var apiController: APIController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +24,19 @@ class SignInViewController: UIViewController {
     
     
     @IBAction func signInTapped(_ sender: Any) {
+        
+    }
+    
+    func signIn(customer: CustomerRepresentation) {
+        apiController?.signIn(customer: customer, completion: { (error) in
+            if let error = error {
+                NSLog("Error occured during sign in: \(error)")
+            } else {
+                DispatchQueue.main.async {
+                    self.navigationController?.popViewController(animated: true)
+                }
+            }
+        })
     }
     
     func updateViews() {
@@ -31,8 +44,6 @@ class SignInViewController: UIViewController {
         Utilities.styleTextField(passwordTextField)
         Utilities.styleFilledButton(signInClientButton)
         signInStylistButton.layer.cornerRadius = 5.0
-        
-        
     }
     
 

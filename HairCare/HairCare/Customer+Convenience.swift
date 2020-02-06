@@ -13,12 +13,13 @@ extension Customer {
     
     var customerRepresentation: CustomerRepresentation? {
         guard let firstName = firstName,
+            let lastName = lastName,
             let city = city,
             let state = state,
             let email = email,
             let password = password else { return nil }
         
-        return CustomerRepresentation(id: id, firstName: firstName, city: city, state: state, email: email, password: password)
+        return CustomerRepresentation(id: id, firstName: firstName, lastName: lastName, city: city, state: state, email: email, password: password)
     }
     
     convenience init(id: Int16, firstName: String, city: String, state: String, email: String, password: String, context: NSManagedObjectContext) {

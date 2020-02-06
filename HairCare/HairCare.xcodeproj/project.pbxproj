@@ -14,7 +14,6 @@
 		2C1A700723E8A1BD00348302 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C1A700523E8A1BD00348302 /* LaunchScreen.storyboard */; };
 		2C1A701623E8ACC700348302 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1A701523E8ACC700348302 /* SignUpViewController.swift */; };
 		2C1A701823E8ACD200348302 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1A701723E8ACD200348302 /* SignInViewController.swift */; };
-		2C1A701A23E8ACD900348302 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1A701923E8ACD900348302 /* HomeViewController.swift */; };
 		2C1A701C23E8C3FA00348302 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1A701B23E8C3FA00348302 /* Utilities.swift */; };
 		2C1A701F23E8D22F00348302 /* Play-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2C1A701D23E8D22F00348302 /* Play-Bold.ttf */; };
 		2C1A702023E8D22F00348302 /* Play-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2C1A701E23E8D22F00348302 /* Play-Regular.ttf */; };
@@ -41,7 +40,6 @@
 		2C1A700823E8A1BD00348302 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C1A701523E8ACC700348302 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		2C1A701723E8ACD200348302 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
-		2C1A701923E8ACD900348302 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		2C1A701B23E8C3FA00348302 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		2C1A701D23E8D22F00348302 /* Play-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Play-Bold.ttf"; sourceTree = "<group>"; };
 		2C1A701E23E8D22F00348302 /* Play-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Play-Regular.ttf"; sourceTree = "<group>"; };
@@ -158,7 +156,6 @@
 			children = (
 				2C1A701523E8ACC700348302 /* SignUpViewController.swift */,
 				2C1A701723E8ACD200348302 /* SignInViewController.swift */,
-				2C1A701923E8ACD900348302 /* HomeViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -253,7 +250,6 @@
 				2C1A703523EB2FD200348302 /* Customer+Convenience.swift in Sources */,
 				2C1A703C23EB7CE200348302 /* Bearer.swift in Sources */,
 				2C1A703323EB2BC900348302 /* StylistRepresentation.swift in Sources */,
-				2C1A701A23E8ACD900348302 /* HomeViewController.swift in Sources */,
 				2C1A701823E8ACD200348302 /* SignInViewController.swift in Sources */,
 				2C1A701623E8ACC700348302 /* SignUpViewController.swift in Sources */,
 				2C1A703723EB3F1C00348302 /* Stylist+Convenience.swift in Sources */,
