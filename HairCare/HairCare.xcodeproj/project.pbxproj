@@ -27,6 +27,8 @@
 		2C1A703323EB2BC900348302 /* StylistRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1A703223EB2BC900348302 /* StylistRepresentation.swift */; };
 		2C1A703523EB2FD200348302 /* Customer+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1A703423EB2FD200348302 /* Customer+Convenience.swift */; };
 		2C1A703723EB3F1C00348302 /* Stylist+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1A703623EB3F1B00348302 /* Stylist+Convenience.swift */; };
+		2C1A703A23EB7C6700348302 /* APIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1A703923EB7C6700348302 /* APIController.swift */; };
+		2C1A703C23EB7CE200348302 /* Bearer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1A703B23EB7CE200348302 /* Bearer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +54,8 @@
 		2C1A703223EB2BC900348302 /* StylistRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StylistRepresentation.swift; sourceTree = "<group>"; };
 		2C1A703423EB2FD200348302 /* Customer+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Customer+Convenience.swift"; sourceTree = "<group>"; };
 		2C1A703623EB3F1B00348302 /* Stylist+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stylist+Convenience.swift"; sourceTree = "<group>"; };
+		2C1A703923EB7C6700348302 /* APIController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIController.swift; sourceTree = "<group>"; };
+		2C1A703B23EB7CE200348302 /* Bearer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bearer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +128,7 @@
 				2C1A703223EB2BC900348302 /* StylistRepresentation.swift */,
 				2C1A703423EB2FD200348302 /* Customer+Convenience.swift */,
 				2C1A703623EB3F1B00348302 /* Stylist+Convenience.swift */,
+				2C1A703B23EB7CE200348302 /* Bearer.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -131,6 +136,7 @@
 		2C1A701223E8A33900348302 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				2C1A703823EB7C4600348302 /* Model Controllers */,
 				2C1A701423E8ACAD00348302 /* View Controllers */,
 			);
 			name = Controllers;
@@ -155,6 +161,14 @@
 				2C1A701923E8ACD900348302 /* HomeViewController.swift */,
 			);
 			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		2C1A703823EB7C4600348302 /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2C1A703923EB7C6700348302 /* APIController.swift */,
+			);
+			name = "Model Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,10 +246,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C1A703A23EB7C6700348302 /* APIController.swift in Sources */,
 				2C1A703123EB294900348302 /* CustomerRepresentation.swift in Sources */,
 				2C1A701C23E8C3FA00348302 /* Utilities.swift in Sources */,
 				2C1A702A23EB23F200348302 /* Customers.xcdatamodeld in Sources */,
 				2C1A703523EB2FD200348302 /* Customer+Convenience.swift in Sources */,
+				2C1A703C23EB7CE200348302 /* Bearer.swift in Sources */,
 				2C1A703323EB2BC900348302 /* StylistRepresentation.swift in Sources */,
 				2C1A701A23E8ACD900348302 /* HomeViewController.swift in Sources */,
 				2C1A701823E8ACD200348302 /* SignInViewController.swift in Sources */,
@@ -395,7 +411,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.tobikuyoro.HairCare;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tobikuyoro.HairCare-ftftbw";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -413,7 +429,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.tobikuyoro.HairCare;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tobikuyoro.HairCare-ftftbw";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
