@@ -11,8 +11,6 @@ import UIKit
 class StylistsViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
     @IBOutlet weak var userNameLabel: UILabel!
-    @IBOutlet weak var localStylistsLabel: UILabel!
-    @IBOutlet weak var localStylistsCollectionView: UICollectionView!
     @IBOutlet weak var allStylistsCollectionView: UICollectionView!
     
     let apiController = APIController()
@@ -22,9 +20,7 @@ class StylistsViewController: UIViewController, UICollectionViewDelegate, UIColl
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        localStylistsCollectionView.delegate = self
         allStylistsCollectionView.dataSource = self
-        localStylistsCollectionView.delegate = self
         allStylistsCollectionView.dataSource = self
         
         apiController.fetchAllStylists { (result) in

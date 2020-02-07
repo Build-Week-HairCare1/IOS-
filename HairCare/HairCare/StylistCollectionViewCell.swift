@@ -28,7 +28,19 @@ class StylistCollectionViewCell: UICollectionViewCell {
         stylistName.text = "\(stylist.firstName) \(stylist.lastName)"
         location.text = "\(stylist.city), \(stylist.state)"
         
-        if stylist.reviews
-        
+        switch stylist.reviews.stars {
+        case 1:
+            rating.text = "★☆☆☆☆"
+        case 2:
+            rating.text = "★★☆☆☆"
+        case 3:
+            rating.text = "★★★☆☆"
+        case 4:
+            rating.text = "★★★★☆"
+        case 5:
+            rating.text = "★★★★★"
+        default:
+            rating.text = "\(rating)"
+        }
     }
 }

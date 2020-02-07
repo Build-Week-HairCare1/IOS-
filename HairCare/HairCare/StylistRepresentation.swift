@@ -9,21 +9,23 @@
 import Foundation
 
 struct StylistRepresentation: Codable {
-    let id: Int16
+    let id: Int
     let firstName: String
     let lastName: String
+    let bio: String
     let city: String
     let state: String
     let email: String
     let password: String
     let photo: String
     let specialty: String
-    let reviews: [ReviewRepresentation]
+    let reviews: ReviewRepresentation
     
     enum CodingKeys: String, CodingKey {
         case id 
         case firstName = "first_name"
         case lastName = "last_name"
+        case bio
         case city
         case state
         case email

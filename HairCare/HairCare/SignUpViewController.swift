@@ -24,6 +24,10 @@ class SignUpViewController: UIViewController {
         updateViews()
     }
     
+    @IBAction func signInTapped(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
+    }
+    
     @IBAction func signUpTapped(_ sender: Any) {
         guard let _ = apiController,
             let fullName = userNameTextField.text,
