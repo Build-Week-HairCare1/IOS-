@@ -35,12 +35,12 @@ class SignUpViewController: UIViewController {
         let firstName = String(fullName.split(separator: " ")[0])
         let lastName = String(fullName.split(separator: " ").last ?? "")
         
-        let customer = CustomerRepresentation(id: 1, firstName: firstName, lastName: lastName, city: city, state: state, email: email, password: password)
+        let customer = SignUpUser(firstName: firstName, lastName: lastName, city: city, state: state, email: email, password: password)
         
         signUp(with: customer)
     }
     
-    func signUp(with customer: CustomerRepresentation) {
+    func signUp(with customer: SignUpUser) {
         apiController?.signUp(customer: customer, completion: { (error) in
             if let error = error {
                 NSLog("Error occured during sign up: \(error)")

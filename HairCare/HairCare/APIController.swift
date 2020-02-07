@@ -41,7 +41,7 @@ class APIController {
     typealias StylistDetailsCompletionHandler = (Result<StylistRepresentation, NetworkError>) -> Void
     typealias StylistImageCompletionHandler = (Result<UIImage, NetworkError>) -> Void
     
-    func signUp(customer: CustomerRepresentation, completion: @escaping SignInCompletionHandler) {
+    func signUp(customer: SignUpUser, completion: @escaping SignInCompletionHandler) {
         let requestURL = baseURL
         .appendingPathComponent("api")
         .appendingPathComponent("customers")
@@ -74,7 +74,7 @@ class APIController {
         }.resume()
     }
     
-    func signIn(customer: CustomerRepresentation, completion: @escaping SignInCompletionHandler) {
+    func signIn(customer: SignInUser, completion: @escaping SignInCompletionHandler) {
         let requestURL = baseURL
         .appendingPathComponent("api")
         .appendingPathComponent("customers")

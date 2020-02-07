@@ -28,6 +28,13 @@
 		2C1A703723EB3F1C00348302 /* Stylist+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1A703623EB3F1B00348302 /* Stylist+Convenience.swift */; };
 		2C1A703A23EB7C6700348302 /* APIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1A703923EB7C6700348302 /* APIController.swift */; };
 		2C1A703C23EB7CE200348302 /* Bearer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1A703B23EB7CE200348302 /* Bearer.swift */; };
+		2C1A703E23EC97E700348302 /* StylistsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1A703D23EC97E700348302 /* StylistsViewController.swift */; };
+		2C1A704023ECABE700348302 /* SignInUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1A703F23ECABE600348302 /* SignInUser.swift */; };
+		2C1A704223ECAC6E00348302 /* SignUpUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1A704123ECAC6E00348302 /* SignUpUser.swift */; };
+		2C1A704423ECBD2A00348302 /* StylistCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1A704323ECBD2A00348302 /* StylistCollectionViewCell.swift */; };
+		2C1A704723ECBE7200348302 /* Reviews.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2C1A704523ECBE7200348302 /* Reviews.xcdatamodeld */; };
+		2C1A704923ECBF3400348302 /* ReviewRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1A704823ECBF3400348302 /* ReviewRepresentation.swift */; };
+		2C1A704B23ED4DBE00348302 /* Review+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1A704A23ED4DBD00348302 /* Review+Convenience.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +61,13 @@
 		2C1A703623EB3F1B00348302 /* Stylist+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Stylist+Convenience.swift"; sourceTree = "<group>"; };
 		2C1A703923EB7C6700348302 /* APIController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIController.swift; sourceTree = "<group>"; };
 		2C1A703B23EB7CE200348302 /* Bearer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bearer.swift; sourceTree = "<group>"; };
+		2C1A703D23EC97E700348302 /* StylistsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StylistsViewController.swift; sourceTree = "<group>"; };
+		2C1A703F23ECABE600348302 /* SignInUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInUser.swift; sourceTree = "<group>"; };
+		2C1A704123ECAC6E00348302 /* SignUpUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpUser.swift; sourceTree = "<group>"; };
+		2C1A704323ECBD2A00348302 /* StylistCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StylistCollectionViewCell.swift; sourceTree = "<group>"; };
+		2C1A704623ECBE7200348302 /* Reviews.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Reviews.xcdatamodel; sourceTree = "<group>"; };
+		2C1A704823ECBF3400348302 /* ReviewRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewRepresentation.swift; sourceTree = "<group>"; };
+		2C1A704A23ED4DBD00348302 /* Review+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Review+Convenience.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,8 +124,9 @@
 		2C1A701023E8A32700348302 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				2C1A700023E8A1BB00348302 /* Main.storyboard */,
 				2C1A700523E8A1BD00348302 /* LaunchScreen.storyboard */,
+				2C1A700023E8A1BB00348302 /* Main.storyboard */,
+				2C1A704323ECBD2A00348302 /* StylistCollectionViewCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -122,10 +137,15 @@
 				2C1A702B23EB24BF00348302 /* CoreDataStack.swift */,
 				2C1A702823EB23F200348302 /* Customers.xcdatamodeld */,
 				2C1A702D23EB277700348302 /* Stylists.xcdatamodeld */,
+				2C1A704523ECBE7200348302 /* Reviews.xcdatamodeld */,
 				2C1A703023EB294800348302 /* CustomerRepresentation.swift */,
 				2C1A703223EB2BC900348302 /* StylistRepresentation.swift */,
+				2C1A704823ECBF3400348302 /* ReviewRepresentation.swift */,
 				2C1A703423EB2FD200348302 /* Customer+Convenience.swift */,
 				2C1A703623EB3F1B00348302 /* Stylist+Convenience.swift */,
+				2C1A704A23ED4DBD00348302 /* Review+Convenience.swift */,
+				2C1A703F23ECABE600348302 /* SignInUser.swift */,
+				2C1A704123ECAC6E00348302 /* SignUpUser.swift */,
 				2C1A703B23EB7CE200348302 /* Bearer.swift */,
 			);
 			name = Models;
@@ -156,6 +176,7 @@
 			children = (
 				2C1A701523E8ACC700348302 /* SignUpViewController.swift */,
 				2C1A701723E8ACD200348302 /* SignInViewController.swift */,
+				2C1A703D23EC97E700348302 /* StylistsViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -243,13 +264,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C1A704723ECBE7200348302 /* Reviews.xcdatamodeld in Sources */,
 				2C1A703A23EB7C6700348302 /* APIController.swift in Sources */,
 				2C1A703123EB294900348302 /* CustomerRepresentation.swift in Sources */,
+				2C1A704023ECABE700348302 /* SignInUser.swift in Sources */,
 				2C1A701C23E8C3FA00348302 /* Utilities.swift in Sources */,
 				2C1A702A23EB23F200348302 /* Customers.xcdatamodeld in Sources */,
+				2C1A703E23EC97E700348302 /* StylistsViewController.swift in Sources */,
 				2C1A703523EB2FD200348302 /* Customer+Convenience.swift in Sources */,
+				2C1A704223ECAC6E00348302 /* SignUpUser.swift in Sources */,
 				2C1A703C23EB7CE200348302 /* Bearer.swift in Sources */,
 				2C1A703323EB2BC900348302 /* StylistRepresentation.swift in Sources */,
+				2C1A704B23ED4DBE00348302 /* Review+Convenience.swift in Sources */,
 				2C1A701823E8ACD200348302 /* SignInViewController.swift in Sources */,
 				2C1A701623E8ACC700348302 /* SignUpViewController.swift in Sources */,
 				2C1A703723EB3F1C00348302 /* Stylist+Convenience.swift in Sources */,
@@ -257,6 +283,8 @@
 				2C1A6FFB23E8A1BA00348302 /* AppDelegate.swift in Sources */,
 				2C1A6FFD23E8A1BB00348302 /* SceneDelegate.swift in Sources */,
 				2C1A702C23EB24BF00348302 /* CoreDataStack.swift in Sources */,
+				2C1A704923ECBF3400348302 /* ReviewRepresentation.swift in Sources */,
+				2C1A704423ECBD2A00348302 /* StylistCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,6 +501,16 @@
 			);
 			currentVersion = 2C1A702E23EB277700348302 /* Stylists.xcdatamodel */;
 			path = Stylists.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		2C1A704523ECBE7200348302 /* Reviews.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2C1A704623ECBE7200348302 /* Reviews.xcdatamodel */,
+			);
+			currentVersion = 2C1A704623ECBE7200348302 /* Reviews.xcdatamodel */;
+			path = Reviews.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

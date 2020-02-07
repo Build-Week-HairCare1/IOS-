@@ -12,8 +12,6 @@ class SignInViewController: UIViewController {
     
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-    @IBOutlet weak var signInClientButton: UIButton!
-    @IBOutlet weak var signInStylistButton: UIButton!
     
     var apiController: APIController?
     
@@ -22,12 +20,17 @@ class SignInViewController: UIViewController {
         updateViews()
     }
     
-    
     @IBAction func signInTapped(_ sender: Any) {
+        guard let _ = apiController,
+            let email = emailTextField.text,
+            let password = passwordTextField.text else { return }
+            
+        let customer = SignInUser(email: email, password: password)
         
+        signIn(customer: customer)
     }
     
-    func signIn(customer: CustomerRepresentation) {
+    func signIn(customer: SignInUser) {
         apiController?.signIn(customer: customer, completion: { (error) in
             if let error = error {
                 NSLog("Error occured during sign in: \(error)")
@@ -42,19 +45,5 @@ class SignInViewController: UIViewController {
     func updateViews() {
         Utilities.styleTextField(emailTextField)
         Utilities.styleTextField(passwordTextField)
-        Utilities.styleFilledButton(signInClientButton)
-        signInStylistButton.layer.cornerRadius = 5.0
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
